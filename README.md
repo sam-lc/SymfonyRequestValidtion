@@ -8,6 +8,7 @@ Validator是symfony/validator的扩展组件
 
 install
 ==================
+composer require saml/symfony-request-validation
 
 Base Usage
 ==================
