@@ -204,7 +204,7 @@ Symfony\Component\HttpFoundation\Request->get('name','test');
 
 # todo
 1. 在前端传值为json格式时Symfony\Component\HttpFoundation\Request->get('')无法获取参数
-需要使用Symfony\Component\HttpFoundation\Request->getContent()获取，建议新写Request扩展组件已实现
-2. Symfony\Component\HttpFoundation\Request->get('key','default');默认值只有在前端未传参数时才会获取，若传参未空则不会去获取默认值。建议新写Request扩展组件已实现
+需要使用Symfony\Component\HttpFoundation\Request->getContent()获取，建议新写Request扩展组件以实现
+2. Symfony\Component\HttpFoundation\Request->get('key','default');默认值只有在前端未传参数时才会获取，若传参未空则不会去获取默认值。建议新写Request扩展组件以实现
 3. 中文翻译
 4. 扩展验证规则
