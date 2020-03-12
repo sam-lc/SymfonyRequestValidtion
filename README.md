@@ -6,7 +6,7 @@ Validator是symfony/validator的扩展组件
 
 目的：让request验证简单便捷
 
-install
+Install
 ==================
 composer require saml/symfony-request-validation
 
