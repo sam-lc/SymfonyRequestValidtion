@@ -1,17 +1,14 @@
-SymfonyRequestValidator
-=============
-Validator是symfony/validator的扩展组件
+# SymfonyRequestValidator
+SymfonyRequestValidator是symfony/validator的扩展组件
 
 目前只支持注解格式
 
 目的：让request验证简单便捷
 
-Install
-==================
+# Install
 composer require samlc/symfony-request-validator
 
-Base Usage
-==================
+# Base Usage
 定义验证类CreateProductRequest
 
 注解@Assert\NotBlank 代表不能为空
@@ -94,8 +91,7 @@ class ProductController
 }
 ```
 
-RequestBuilder Use
-=======================
+# RequestBuilder Use
 如果不想自己去new CreateProductRequest可以尝试调RequestBuilder::buildFormRequest
 
 RequestBuilder利用反射获取CreateProductRequest的Properties从Request中获取自动赋值
@@ -184,8 +180,7 @@ class CreateProductRequest
 
 ```
 
-DefaultAnnotation 默认值组件
-======================
+# DefaultAnnotation 默认值组件
 <br>只有在使用RequestBuilder的情况下才有效</br>
 
 ```php
@@ -207,8 +202,7 @@ class CreateProductRequest
 在前端未设置参数name的时间会自动获取默认值'test',等于
 Symfony\Component\HttpFoundation\Request->get('name','test');
 
-todo
-================
+# todo
 1. 在前端传值为json格式时Symfony\Component\HttpFoundation\Request->get('')无法获取参数
 需要使用Symfony\Component\HttpFoundation\Request->getContent()获取，建议新写Request扩展组件已实现
 2. Symfony\Component\HttpFoundation\Request->get('key','default');默认值只有在前端未传参数时才会获取，若传参未空则不会去获取默认值。建议新写Request扩展组件已实现
