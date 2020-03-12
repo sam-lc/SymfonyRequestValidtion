@@ -1,4 +1,4 @@
-SymfonyRequestValidation
+SymfonyRequestValidator
 =============
 Validator是symfony/validator的扩展组件
 

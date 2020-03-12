@@ -1,5 +1,5 @@
 {
-    "name": "saml/symfony-request-validation",
+    "name": "saml/symfony-request-validator",
     "description": "Extend Symfony Validator Component For Easy Validate Request",
     "type": "library",
     "authors": [
