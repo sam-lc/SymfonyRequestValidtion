@@ -1,0 +1,5 @@
+.idea
+.DS_Store
+!.gitignore
+/vendor
+composer.lock

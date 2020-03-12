@@ -1,0 +1,22 @@
+{
+    "name": "saml/symfony-request-validation",
+    "description": "Extend Symfony Validator Component For Easy Validate Request",
+    "type": "library",
+    "authors": [
+        {
+            "name": "lichao",
+            "email": "lichao@xiaozhu.com"
+        }
+    ],
+    "require": {
+        "php": ">7.1",
+        "symfony/validator": "4.4.*",
+        "doctrine/annotations": "^1.8",
+        "symfony/http-foundation": "^4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Validation\\Request\\": "src/"
+        }
+    }
+}
