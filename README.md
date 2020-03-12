@@ -71,7 +71,7 @@ class CreateProductRequest
 ```
 Controller中使用
 
-\XZ\Validation\Validator::validate会自动验证$createProductRequest是否符合验证类CreateProductRequest中规定
+Validation\Request\Validator::validate会自动验证$createProductRequest是否符合验证类CreateProductRequest中规定
 ```php
 <?php
 use Symfony\Component\HttpFoundation\Request;
